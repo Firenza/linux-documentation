@@ -10,7 +10,7 @@ Configure samba
 Managing samba users
 
 * Use the `smbpasswd` command to add / remove / change samba users. E.G. `sudo smbpasswd -a pi` to add samba user `pi`
-* Use the `pdbedit -L -v` command to the current samba users
+* Use the `sudo pdbedit -L -v` command to the current samba users
 
 Linux will map samba users to linux users when taking into account directory persmissions. E.G. If you have a folder in linux
 that's owned by a user called `pi`, and you want to interact with it through samba as if you were interacting with it in linux as the user `pi`
