@@ -20,3 +20,11 @@ that's owned by a user called `pi`, and you want to interact with it through sam
 #### Troubleshooting
 
 By default logs will go to `/var/log/samba`.  To update the verbosity of those logs you can add a `log level = 3` line to your `smb.conf` file.
+
+To reset cached network credentials in Windows Explorer do the following
+
+1. Close Explorer
+1. Run `net use * /DELETE` in a command prompt
+1. on the linux machine run `sudo systemctl restart smbd.service` to restart the samba service
+
+If the windows command doesn't do anything won't work. For some reason connections sometimes don't show up there
