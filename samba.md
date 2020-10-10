@@ -5,7 +5,8 @@ Install samba
 Configure samba
 
 1. `sudo nano /etc/samba/smb.conf` to do the updates
-2. `sudo systemctl restart smbd` to restart samba so the updates are in effect
+1. `testparm` to validate your changes
+1. `sudo systemctl restart smbd` to restart samba so the updates are in effect
 
 Managing samba users
 
