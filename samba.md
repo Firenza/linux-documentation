@@ -16,3 +16,7 @@ Managing samba users
 Linux will map samba users to linux users when taking into account directory persmissions. E.G. If you have a folder in linux
 that's owned by a user called `pi`, and you want to interact with it through samba as if you were interacting with it in linux as the user `pi`
 , you just create a samba user of the same name and use that samba user/pass when connecting to the file share.
+
+Troubleshooting
+
+By default logs will go to `/var/log/samba`.  To update the verbosity of those logs you can add a `log level = 3` line to your `smb.conf` file.
