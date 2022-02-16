@@ -14,3 +14,4 @@
             IdentityFile /Users/YOUR_USERNAME/.ssh/id_rsa_NEW_DEVICE_NAME
             User YOUR_USER_NAME
         ```
+1. Save new private key to password manager
